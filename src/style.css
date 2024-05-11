@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.side{
+    max-width: 40%;
+    background-color: lightgray;
+    height: 100vh;
+    padding:30px 15px 5px 40px;
+}
+.main{
+    max-width: 60%;
+}
+.hide{
+    display: none;
+}
+.active-list{
+    font-weight: bolder;
+}
+.task{
+    display: flex;
+    gap: 2%;
+    border-bottom: 1px solid black;
+}
+.delete_projects{
+    position: fixed;
+    bottom:1%;
+    left: 10%;
+}
+.task_add{
+    position: fixed;
+    bottom: 1%;
+    left: 35%;
+    max-width: 20%;
+}
+.delete{
+    padding: 5px;
+    font-size: 16px;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px grey;
+}
+#form_project>form>button{
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 0.5px solid grey;
+    box-shadow: 2px 2px 4px grey;
+    border-radius:5px;
+    margin:15px 0px
+}
+#projects_container{
+    line-height: 1.5em;
+    margin-left:40px;
+}
+#tasks_container{
+    line-height: 1.5em;
+    padding-left:80px
+}
+#form_input{
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+#show_task_form{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: 0.5px solid gray;
+    box-shadow: 2px 2px 4px grey;
+}
+.main>#header{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    padding: 10px 10px 10px 30px;
+}
+.main>div+div,.task_form{
+    padding: 5px 10px 2px 40px;
+    background-color: beige;
+    width: 100vw;
+}
+body{
+    display: flex;
+    
+}
